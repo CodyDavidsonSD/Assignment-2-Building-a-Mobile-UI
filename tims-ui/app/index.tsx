@@ -8,7 +8,7 @@ import { DirButton, dirButtons } from "@/data/DirectoryButtons";
 export default function Index() {
   return (
     <View className="bg-amber-50 flex-1 justify-center align-middle">
-      <TopNav />
+      <TopNav/>
       <View className="">
         <Text className="text-blue-700">
           Edit app/index.tsx to edit this screen.

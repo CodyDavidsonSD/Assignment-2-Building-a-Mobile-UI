@@ -7,7 +7,7 @@ import "../../global.css";
 export default class TopNav extends Component {
   render() {
     return (
-      <View className="bg-white">
+      <View className="bg-white pt-[60px] pl-5">
         <View className="flex flex-row justify-end gap-10 px-5">
           <MaterialCommunityIcons
             name="shopping-search-outline"

@@ -1,18 +1,39 @@
-import { Text, View } from "react-native";
+import { dirButtons } from "@/data/DirectoryButtons";
+import { Image, Text, View } from "react-native";
 import "../global.css";
 import BottomNav from "./components/BottomNav";
-import TopNav from "./components/TopNav";
 import DirButtonsSection from "./components/DirButtonsSection";
-import { DirButton, dirButtons } from "@/data/DirectoryButtons";
+import PromoCard from "./components/PromoCard";
+import TopNav from "./components/TopNav";
 
 export default function Index() {
   return (
     <View className="bg-amber-50 flex-1 justify-center align-middle">
-      <TopNav/>
-      <View className="">
-        <Text className="text-blue-700">
-          Edit app/index.tsx to edit this screen.
-        </Text>
+      <TopNav />
+      <View className="px-5 py-4">
+        <PromoCard />
+      </View>
+      <View className="px-5">
+        <View className="flex-row gap-4">
+          <View className="flex-1 bg-white rounded-lg p-4 items-center">
+            <Text className="text-base text-gray-800 font-semibold">Order</Text>
+            <Image
+              source={require("../assets/images/Screenshot 2026-06-05 203806.png")}
+              className="w-full h-24 mt-3 rounded"
+              resizeMode="contain"
+            />
+            <Text className="text-xs text-gray-500 mt-3">Start an Order for your Tims favourites.</Text>
+          </View>
+          <View className="flex-1 bg-white rounded-lg p-4 items-center">
+            <Text className="text-base text-gray-800 font-semibold">Rewards</Text>
+            <Image
+              source={require("../assets/images/Screenshot 2026-06-05 205158.png")}
+              className="w-full h-24 mt-3 rounded"
+              resizeMode="contain"
+            />
+            <Text className="text-xs text-gray-500 mt-3">You've got 1 reward to claim!</Text>
+          </View>
+        </View>
       </View>
       <View className="flex-row flex-wrap gap-4 px-5 py-5">
         {

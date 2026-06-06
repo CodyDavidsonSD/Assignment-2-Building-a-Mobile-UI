@@ -1,8 +1,9 @@
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import React, { Component } from "react";
-import { Text, View } from "react-native";
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 import "../../global.css";
+
 
 export default class TopNav extends Component {
   render() {

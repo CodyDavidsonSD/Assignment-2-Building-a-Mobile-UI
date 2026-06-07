@@ -1,6 +1,6 @@
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import React from 'react';
+import { JSX } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 
 export default function PromoCard(): JSX.Element {
@@ -20,7 +20,7 @@ export default function PromoCard(): JSX.Element {
 
       <TouchableOpacity activeOpacity={0.85} className="bg-teal-700 px-4 py-3 flex-row items-center justify-between rounded-b-lg">
         <View className="flex-row items-center gap-2">
-          <MaterialIcons name="local-offer" size={20} color="#fff" />
+          <MaterialIcons name="local-offer" size={20} color="#EFCF00" />
           <Text className="text-white font-semibold">7 new offers!</Text>
         </View>
         <Entypo name="chevron-small-right" size={20} color="#fff" />

@@ -1,5 +1,5 @@
 import { dirButtons } from "@/data/DirectoryButtons";
-import { Image, Text, View } from "react-native";
+import { Image, Text, View, Pressable, Alert } from "react-native";
 import "../global.css";
 import BottomNav from "./components/BottomNav";
 import DirButtonsSection from "./components/DirButtonsSection";
@@ -15,7 +15,7 @@ export default function Index() {
       </View>
       <View className="px-5">
         <View className="flex-row gap-4">
-          <View className="flex-1 bg-white rounded-lg p-4 items-center">
+          <View className="flex-1 bg-white rounded-lg p-4 items-center shadow">
             <Text className="text-base text-gray-800 font-semibold">Order</Text>
             <Image
               source={require("../assets/images/Screenshot 2026-06-05 203806.png")}
@@ -24,7 +24,7 @@ export default function Index() {
             />
             <Text className="text-xs text-gray-500 mt-3">Start an Order for your Tims favourites.</Text>
           </View>
-          <View className="flex-1 bg-white rounded-lg p-4 items-center">
+          <View className="flex-1 bg-white rounded-lg p-4 items-center shadow">
             <Text className="text-base text-gray-800 font-semibold">Rewards</Text>
             <Image
               source={require("../assets/images/Screenshot 2026-06-05 205158.png")}
@@ -45,6 +45,13 @@ export default function Index() {
             />
         ))}
       </View>
+      <Pressable 
+        onPress={() => Alert.alert('Alert','Alert!')}
+        className="items-center rounded-lg bg-red-600">
+        <Text className="text-white w-40 text-center">
+          ALERT
+        </Text>
+      </Pressable>
       <View className="bg-white mt-auto">
         <BottomNav />
       </View>

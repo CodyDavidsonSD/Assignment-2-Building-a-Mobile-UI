@@ -1,9 +1,8 @@
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Component } from "react";
+import { View } from "react-native";
 import "../../global.css";
-
 
 export default class TopNav extends Component {
   render() {
@@ -17,9 +16,6 @@ export default class TopNav extends Component {
           />
           <EvilIcons name="user" size={30} color="black" />
         </View>
-        <Text className="w-1/2 text-wrap text-2xl text-black font-bold">
-          Good afternoon, Cody Davidson.
-        </Text>
       </View>
     );
   }

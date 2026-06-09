@@ -9,7 +9,6 @@ import TopNav from "./components/TopNav";
 export default function Index() {
   return (
     <View className="bg-amber-50 flex-1 justify-center align-middle">
-      <TopNav />
       <View className="px-5 py-4">
         <PromoCard />
       </View>
@@ -52,9 +51,6 @@ export default function Index() {
           ALERT
         </Text>
       </Pressable>
-      <View className="bg-white mt-auto">
-        <BottomNav />
-      </View>
     </View>
   );
 }

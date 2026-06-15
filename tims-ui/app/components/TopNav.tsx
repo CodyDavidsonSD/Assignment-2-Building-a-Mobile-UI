@@ -7,7 +7,7 @@ type nameProps = { pageName: string };
 
 const TopNav = (pageName: nameProps) => {
   return (
-    <View className="bg-white pt-[60px]">
+    <View className="bg-white pt-[60px] pb-2">
       <View className="flex flex-row">
         <View className="w-1/3"></View>
         <View className="w-1/3 text-center">

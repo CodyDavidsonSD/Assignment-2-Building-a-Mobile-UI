@@ -14,7 +14,7 @@ export default function RootLayout() {
     </Stack>
     <View className="bg-white mt-auto">
         <BottomNav />
-      </View>
+    </View>
   </>
   )
   

@@ -1,4 +1,4 @@
-import {Text, View, Image, Dimensions } from "react-native";
+import {Text, View, Image} from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Entypo from '@expo/vector-icons/Entypo';
 import ToggleSwitch from "./components/ToggleSwitch";

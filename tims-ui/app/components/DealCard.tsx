@@ -12,20 +12,18 @@ type DealCardProps = {
 const DealCard = (card: DealCardProps) => {
   return (
     <View className="rounded-2xl bg-white h-96">
-      <Image source={card.img} className="w-[188px] h-44" />
+      <Image source={card.img} className="w-[188px] h-44 rounded-t-2xl" />
       <View className="flex flex-col justify-between pb-2 h-52">
         <View>
-          <View
-            className={`${card.msg ? "bg-green-300 w-full p-2" : "hidden"}`}
-          >
+          <View className={`${card.msg ? "bg-lime-400 w-full p-2" : "hidden"}`}>
             <Text className="text-sm font-semibold text-center">
               {card.msg}
             </Text>
           </View>
-          <Text className="text-lg font-semibold">{card.deal}</Text>
-          <Text className="pt-1">{card.description}</Text>
+          <Text className="text-lg font-semibold pl-2">{card.deal}</Text>
+          <Text className="pt-1 pl-2">{card.description}</Text>
         </View>
-        <View className="mt-auto">
+        <View className="mt-auto pl-2">
           <Text className="text-sm text-[#c80f2e] pb-4">{card.timeLeft}</Text>
           <View className="flex flex-row justify-start gap-1 mb-2">
             <Text className="text-sm underline text-slate-800 self-end">

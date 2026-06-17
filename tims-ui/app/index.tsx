@@ -6,7 +6,7 @@ import PromoCard from "./components/PromoCard";
 
 export default function Index() {
   return (
-    <View className="bg-amber-50 flex-1 justify-center align-middle">
+    <View className="bg-amber-50 flex-1 justify-center align-middle mt-6">
       <View className="bg-white mt-5 py-2">
         <Text className="w-1/2 text-wrap text-2xl text-black font-bold px-4">
           Good afternoon, Cody Davidson.

@@ -1,4 +1,4 @@
-import {Text, View, Image, Dimensions } from "react-native";
+import {Text, View, Image} from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Entypo from '@expo/vector-icons/Entypo';
 import ToggleSwitch from "./components/ToggleSwitch";
@@ -18,7 +18,7 @@ const scan = () => {
           <View className="w-1/2"></View>
         </View>
       </View>
-      <View className="flex-column bg-white p-5 m-5 rounded-2xl shadow-md">
+      <View className="flex-column bg-white p-5 mx-5 my-4 rounded-2xl shadow-md">
         <View className="flex-row items-center gap-3">
           <View className="bg-[#c80f2e] px-4 h-10 rounded-lg justify-center">
             <FontAwesome6 name="canadian-maple-leaf" size={24} color="white"/>
@@ -32,23 +32,23 @@ const scan = () => {
           </View>
         </View>
       </View>
-      <View className="flex-column bg-white px-4 pt-6 pb-5 m-5 rounded-2xl shadow-md gap-9">
+      <View className="flex-column bg-white px-4 pt-6 pb-5 mx-5 my-4 rounded-2xl shadow-md gap-9">
         <Text className="text-2xl font-bold text-center">Scan For Tims Rewards</Text>
         <Image 
           source={require('../assets/images/qr_code.png')} 
           className="w-72 h-72 self-center"
         />
       </View>
-      <View className="flex-column bg-white px-4 pt-1 pb-2 m-5 rounded-2xl shadow-md">
-        <View className="flex-row">
-            <Text className="font-semibold text-lg align-middle">Redeem my points</Text>
+      <View className="flex-column bg-white px-4 pt-1 pb-2 mx-5 my-4 rounded-2xl shadow-md">
+        <View className="flex-row items-center">
+            <Text className="font-semibold text-lg">Redeem my points</Text>
             <View className="ml-auto">
               <ToggleSwitch/>
             </View>
         </View>
         <View className="bg-gray-200 h-0.5">
         </View>
-        <View>
+        <View className="my-4">
           <Text className="text-lg font-bold">Chosen Reward Level</Text>
           <View className="flex-row">
             <Text className="text-lg flex-1">

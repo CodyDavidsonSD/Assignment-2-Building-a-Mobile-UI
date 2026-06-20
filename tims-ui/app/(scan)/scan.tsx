@@ -1,7 +1,7 @@
 import {Text, View, Image} from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Entypo from '@expo/vector-icons/Entypo';
-import ToggleSwitch from "./components/ToggleSwitch";
+import ToggleSwitch from "../components/ToggleSwitch";
 
 const scan = () => {
   return (
@@ -35,7 +35,7 @@ const scan = () => {
       <View className="flex-column bg-white px-4 pt-6 pb-5 mx-5 my-4 rounded-2xl shadow-md gap-9">
         <Text className="text-2xl font-bold text-center">Scan For Tims Rewards</Text>
         <Image 
-          source={require('../assets/images/qr_code.png')} 
+          source={require('../../assets/images/qr_code.png')} 
           className="w-72 h-72 self-center"
         />
       </View>

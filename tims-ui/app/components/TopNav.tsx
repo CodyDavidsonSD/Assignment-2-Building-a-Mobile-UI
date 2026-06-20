@@ -1,11 +1,13 @@
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
+import { useRouter } from "expo-router";
 import "../../global.css";
 
 type nameProps = { pageName: string };
 
 const TopNav = (pageName: nameProps) => {
+  const router = useRouter();
   return (
     <View className="bg-white pt-[60px] pb-2">
       <View className="flex flex-row">
@@ -19,12 +21,16 @@ const TopNav = (pageName: nameProps) => {
           {/* <Text className="justify-self-center font-semibold text-lg">
           {pageName.pageName}
         </Text> */}
+        <Pressable onPress={() => router.push('/(location)/location')} className="flex items-center">
           <MaterialCommunityIcons
             name="shopping-search-outline"
             size={24}
             color="black"
           />
-          <EvilIcons name="user" size={30} color="black" />
+          </Pressable>
+          <Pressable onPress={() => {}} className="flex items-center">
+            <EvilIcons name="user" size={30} color="black" />
+          </Pressable>
         </View>
       </View>
     </View>

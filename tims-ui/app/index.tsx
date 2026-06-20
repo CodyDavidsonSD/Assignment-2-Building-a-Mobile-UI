@@ -43,7 +43,7 @@ export default function Index() {
           </View>
         </View>
       </View>
-      <View className="flex-row flex-wrap gap-4 px-4 py-5">
+      <View className="flex-row flex-wrap gap-3 px-4 py-5 grid-cols-4 pl-3 pr-2">
         {dirButtons.map((DirButton) => (
           <DirButtonsSection
             key={DirButton.label}

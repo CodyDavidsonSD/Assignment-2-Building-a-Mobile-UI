@@ -1,6 +1,6 @@
 import { dirButtons } from "@/data/DirectoryButtons";
 import { Image, Text, View, Pressable } from "react-native";
-import { useRouter } from "expo-router";
+import { router, usePathname, useRouter } from "expo-router";
 import "../global.css";
 import DirButtonsSection from "./components/DirButtonsSection";
 import PromoCard from "./components/PromoCard";

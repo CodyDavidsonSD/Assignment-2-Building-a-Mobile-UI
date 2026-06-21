@@ -21,7 +21,7 @@ const TopNav = (pageName: nameProps) => {
           {/* <Text className="justify-self-center font-semibold text-lg">
           {pageName.pageName}
         </Text> */}
-        <Pressable onPress={() => router.push('/(location)/location')} className="flex items-center">
+        <Pressable className="flex items-center">
           <MaterialCommunityIcons
             name="shopping-search-outline"
             size={24}

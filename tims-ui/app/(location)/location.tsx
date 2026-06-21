@@ -27,7 +27,7 @@ const Location = () => {
   ];
 
   return (
-    <View className="bg-white flex-1">
+    <View className="bg-white flex-1 ">
       <View className="bg-white pt-4 px-5 pb-4 border-b border-gray-200">
         <View className="flex flex-row items-center justify-between mb-4">
           <Text className="text-2xl font-bold">Locations</Text>

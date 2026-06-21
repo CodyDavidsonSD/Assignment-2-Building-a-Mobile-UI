@@ -8,7 +8,7 @@ import "../../global.css";
 const BottomNav = () => {
   const pathname = usePathname();
   return (
-    <View className="flex flex-row justify-center gap-x-32 py-2 mx-auto mb-safe w-full">
+    <View className="flex flex-row justify-center gap-x-32 py-2 mx-auto mb-safe w-full bg-white border-t border-slate-300">
       <Pressable onPress={() => router.push("/")} className="flex items-center">
         <AntDesign
           name="home"

@@ -1,12 +1,14 @@
 import { dirButtons } from "@/data/DirectoryButtons";
-import { Image, Text, View } from "react-native";
+import { Image, Text, View, Pressable } from "react-native";
+import { router, usePathname, useRouter } from "expo-router";
 import "../global.css";
 import DirButtonsSection from "./components/DirButtonsSection";
 import PromoCard from "./components/PromoCard";
 
 export default function Index() {
+  const router = useRouter();
   return (
-    <View className="bg-amber-50 flex-1 justify-center align-middle">
+    <View className="bg-amber-50 flex-1 justify-center align-middle mt-6">
       <View className="bg-white mt-5 py-2">
         <Text className="w-1/2 text-wrap text-2xl text-black font-bold px-4">
           Good afternoon, Cody Davidson.
@@ -17,7 +19,7 @@ export default function Index() {
       </View>
       <View className="px-5">
         <View className="flex-row gap-4">
-          <View className="flex-1 bg-white rounded-lg p-4 items-center shadow">
+          <Pressable onPress={() => router.push('/(location)/location')} className="flex-1 bg-white rounded-lg p-4 items-center shadow">
             <Text className="text-base text-gray-800 font-semibold">Order</Text>
             <Image
               source={require("../assets/images/Screenshot 2026-06-05 203806.png")}
@@ -27,7 +29,7 @@ export default function Index() {
             <Text className="text-xs text-gray-500 mt-3">
               Start an Order for your Tims favourites.
             </Text>
-          </View>
+          </Pressable>
           <View className="flex-1 bg-white rounded-lg p-4 items-center shadow">
             <Text className="text-base text-gray-800 font-semibold">
               Rewards
@@ -43,7 +45,7 @@ export default function Index() {
           </View>
         </View>
       </View>
-      <View className="flex-row flex-wrap gap-4 px-4 py-5">
+      <View className="flex-row flex-wrap gap-3 px-4 py-5 grid-cols-4 pl-3 pr-2">
         {dirButtons.map((DirButton) => (
           <DirButtonsSection
             key={DirButton.label}
